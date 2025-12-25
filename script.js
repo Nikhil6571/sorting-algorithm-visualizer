@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-
 let array = [];
 let size = 30;
 let comparisons = 0;
@@ -242,5 +240,4 @@ async function partition(arr, low, high) {
 
 // ---------- Initial Load ----------
 generateArray();
-});
 
