@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Sorting Algorithm Visualizer</h1>
+
+<div class="info">
+    <span>Comparisons: <b id="comparisons">0</b></span>
+    <span id="complexity">Time Complexity: —</span>
+    <span>Execution Time: <b id="time">0</b> ms</span>
+</div>
+
+<div class="controls">
+    <button onclick="generateArray()">Random</button>
+    <button onclick="generateBestCase()">Best Case</button>
+    <button onclick="generateWorstCase()">Worst Case</button>
+
+    <br><br>
+
+    <button onclick="bubbleSort()">Bubble Sort</button>
+    <button onclick="mergeSortStart()">Merge Sort</button>
+    <button onclick="quickSortStart()">Quick Sort</button>
+
+    <br><br>
+
+    <label>Speed</label>
+    <input type="range" min="10" max="300" value="100" id="speed">
+
+    <label>Size</label>
+    <input type="range" min="10" max="60" value="30"
+           oninput="updateSize(this.value)">
+</div>
+
+<div id="array"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
+
